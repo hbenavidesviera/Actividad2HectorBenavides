@@ -4,9 +4,9 @@
 
     <string-array name="Categorias">
         <item>Seleccione</item>
-        <item>PC</item>
-        <item>Nintendo Switch</item>
-        <item>PlayStation 5</item>
+        <item>Acción</item>
+        <item>Suspenso</item>
+        <item>Comedia</item>
 
     </string-array>
 </resources>

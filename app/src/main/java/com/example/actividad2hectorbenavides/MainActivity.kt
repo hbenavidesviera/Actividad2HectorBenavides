@@ -19,31 +19,31 @@ class MainActivity : AppCompatActivity() {
         initSpinner()
     }
 
-    fun llenarCardViewPC(){
-        data.add(ItemsViewModel(R.drawable.haloinfinite_icon, "Halo: Infinite ", "Jefe Maestro"))
-        data.add(ItemsViewModel(R.drawable.ageofempires_icon, "Age of Empire IV ", "Juego estrategia"))
-        data.add(ItemsViewModel(R.drawable.citiesskyline_icon, "Cities Skyline", "Construye tu propia ciudad!"))
-        data.add(ItemsViewModel(R.drawable.masseffect_icon, "Mass Effect: Andromeda", "Desubre seres alienigenas"))
-        data.add(ItemsViewModel(R.drawable.starfield_icon, "Cities Skyline", "Descubre nuevos mundos y explora la galaxia"))
-        data.add(ItemsViewModel(R.drawable.awayout_icon, "Cities Skyline", "Escapa del encierro con tu amigo"))
+    fun llenarCardViewAccion() {
+
+        data.add(ItemsViewModel(R.drawable.sin_novedad_en_el_frente, "Sin novedad en el frente", "Paul, de 17 años, se une al Frente Occidental en la Primera Guerra Mundial, pero su entusiasmo inicial se ve truncado por la sombría realidad de la vida en las trincheras."))
+        data.add(ItemsViewModel(R.drawable.soldadoryan, "Rescatando al soldado Ryan", "un clásico del cine belico, un film de culto" ))
+        data.add(ItemsViewModel(R.drawable.john, "John Wick 4", "la última entrega de una saga brutal"))
+        data.add(ItemsViewModel(R.drawable.rapido, "rapido y furiosos 10", "alabada por la critica, en la latinoamerica"))
+
     }
 
-    fun llenarCardViewNintendoSwitch(){
-        data.add(ItemsViewModel(R.drawable.minecraft_icon, "Minecraft ", "Construye tu creatividad"))
-        data.add(ItemsViewModel(R.drawable.marioodyssey_icon, "Mario Odyssey", "Gran juego de mario en nintendo switch"))
-        data.add(ItemsViewModel(R.drawable.mariowonder_icon, "Super Mario Bros. Wonder", "Nuevo mario!"))
-        data.add(ItemsViewModel(R.drawable.zelda_icon, "Zelda: Tears of the Kindgdom", "Continua la aventura de Breath of the Wild"))
-        data.add(ItemsViewModel(R.drawable.seaofstar_icon, "Sea of Stars", "Disfruta de este juego de rol por turnos"))
-        data.add(ItemsViewModel(R.drawable.luigismansion_icon, "Luigi´s Mansion 3", "Adentrate en la mansion con luigi en esta tercera entrega"))
+
+
+    fun llenarCardViewComedia(){
+        data.add(ItemsViewModel(R.drawable.littleman, "Little man", "una pequeña gran pelicula"))
+        data.add(ItemsViewModel(R.drawable.soncomoninos, "Son como niños 2", "la segunda parte de un clasico"))
+        data.add(ItemsViewModel(R.drawable.simpsons,"los simpsons la pelicula", "un clasico para todas las edades"))
+        data.add(ItemsViewModel(R.drawable.futurama, "Futurama", "la segunda entrega al cine de una leyenda"))
+
     }
 
-    fun llenarCardViewPlaystation5(){
-        data.add(ItemsViewModel(R.drawable.spiderman_icon, "Marvel Spiderman 2", "Jefe Maestro"))
-        data.add(ItemsViewModel(R.drawable.godofwar_icon, "God of War: Ragnarok", "Juego estrategia"))
-        data.add(ItemsViewModel(R.drawable.crysis3_icon, "Crysis 3", "Construye tu propia ciudad!"))
-        data.add(ItemsViewModel(R.drawable.granturismo_icon, "Gran Turismo 7", "Desubre seres alienigenas"))
-        data.add(ItemsViewModel(R.drawable.returnal_icon, "Returnal", "Descubre nuevos mundos y explora la galaxia"))
-        data.add(ItemsViewModel(R.drawable.horizon_icon, "Horizon: Forbidden West", "Escapa del encierro con tu amigo"))
+    fun llenarCardViewSuspenso(){
+        data.add(ItemsViewModel(R.drawable.fantasy,"fantasy Island", "un sesión de suspenso"))
+        data.add(ItemsViewModel(R.drawable.glass, "Glass house", "una historia para recordar"))
+        data.add(ItemsViewModel(R.drawable.exorcista, "el exorcista", "asustando por decadas"))
+        data.add(ItemsViewModel(R.drawable.exorcista2, "el exorcista 2", "segunda entrega de una leyenda"))
+
     }
 
     fun initSpinner() {
@@ -72,37 +72,37 @@ class MainActivity : AppCompatActivity() {
 
                     //seleccion de la categoria y al ser igual al nombre de la categoria, hace las siguientes acciones
                     when (categoriaSeleccionada) {
-                        "PC" -> {
+                        "Acción" -> {
                             Toast.makeText(
                                 this@MainActivity,
                                 "Ha seleccionado: PC",
                                 Toast.LENGTH_SHORT
                             ).show()
                             data.clear()
-                            llenarCardViewPC()
+                            llenarCardViewAccion()
                             initRecyclerView()
 
                         }
 
-                        "Nintendo Switch" -> {
+                        "Suspenso" -> {
                             Toast.makeText(
                                 this@MainActivity,
                                 "Ha seleccionado: Nintendo Switch",
                                 Toast.LENGTH_SHORT
                             ).show()
                             data.clear()
-                            llenarCardViewNintendoSwitch()
+                            llenarCardViewSuspenso()
                             initRecyclerView()
                         }
 
-                        "PlayStation 5" -> {
+                        "Comedia" -> {
                             Toast.makeText(
                                 this@MainActivity,
                                 "Ha seleccionado: PlayStation 5",
                                 Toast.LENGTH_SHORT
                             ).show()
                             data.clear()
-                            llenarCardViewPlaystation5()
+                            llenarCardViewComedia()
                             initRecyclerView()
 
                         }
