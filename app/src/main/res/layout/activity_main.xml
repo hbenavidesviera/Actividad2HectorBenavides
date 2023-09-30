@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/popcorn">
 
     <Spinner
         android:id="@+id/categorias"
         android:layout_width="297dp"
         android:layout_height="49dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/border_radius_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCategoria" />
@@ -20,6 +22,7 @@
         android:layout_width="249dp"
         android:layout_height="32dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/border_radius_title"
         android:text="  Top Películas"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

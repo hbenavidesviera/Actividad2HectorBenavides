@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
                         "Acción" -> {
                             Toast.makeText(
                                 this@MainActivity,
-                                "Ha seleccionado: PC",
+                                "categoria acción, seleccionada",
                                 Toast.LENGTH_SHORT
                             ).show()
                             data.clear()
@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
                         "Suspenso" -> {
                             Toast.makeText(
                                 this@MainActivity,
-                                "Ha seleccionado: Nintendo Switch",
+                                "categoria suspenso, seleccionada",
                                 Toast.LENGTH_SHORT
                             ).show()
                             data.clear()
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
                         "Comedia" -> {
                             Toast.makeText(
                                 this@MainActivity,
-                                "Ha seleccionado: PlayStation 5",
+                                "categoria Comedia, seleccionada",
                                 Toast.LENGTH_SHORT
                             ).show()
                             data.clear()

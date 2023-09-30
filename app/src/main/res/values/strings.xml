@@ -3,7 +3,7 @@
     <string name="categorias">Categorias</string>
 
     <string-array name="Categorias">
-        <item>Seleccione</item>
+        <item>Seleccionador de películas</item>
         <item>Acción</item>
         <item>Suspenso</item>
         <item>Comedia</item>
