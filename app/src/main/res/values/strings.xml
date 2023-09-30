@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Actividad2HectorBenavides</string>
+    <string name="categorias">Categorias</string>
+
+    <string-array name="Categorias">
+        <item>Seleccione</item>
+        <item>PC</item>
+        <item>Nintendo Switch</item>
+        <item>PlayStation 5</item>
+
+    </string-array>
+</resources>
